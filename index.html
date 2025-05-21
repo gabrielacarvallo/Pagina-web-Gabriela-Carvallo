@@ -2,22 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela Carvallo</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f7f0f5; /* rosa pastel */
+            background-color: #fceef1; /* rosa pastel */
             color: #333;
         }
 
         header {
-            background-color: #d3c0cd; /* gris rosado */
-            color: #fff;
-            padding: 30px 20px;
+            background-color: #d8cfd0; /* gris claro */
+            padding: 20px;
             text-align: center;
+        }
+
+        nav {
+            background-color: #f7dce5; /* rosa claro */
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #8a5a63; /* rosa oscuro */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
@@ -26,22 +43,20 @@
             margin: auto;
         }
 
-        h1, h2 {
-            color: #b76e79; /* rosa más oscuro */
+        h2 {
+            color: #8a5a63;
         }
 
-        .contacto {
-            background-color: #e9e2e8; /* gris claro */
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 40px;
+        ul {
+            list-style: disc;
+            margin-left: 20px;
         }
 
         footer {
+            background-color: #d8cfd0;
             text-align: center;
             padding: 20px;
-            background-color: #d3c0cd;
-            color: #fff;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -52,12 +67,20 @@
         <p>Estudiante de Administración de Negocios</p>
     </header>
 
-    <section>
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>Tengo 18 años y me encuentro en mi tercer ciclo en la carrera de Administración de Negocios en la Universidad Católica San Pablo.</p>
         <p>Durante este tiempo he establecido muy buenas relaciones de amistad con Yoandria Martínez, Santiago Bolaños, Bruno Chiappe, Tomás Becerra, entre otros.</p>
         <p>Mi pasatiempo favorito es salir con mis amigos y familia, así como también disfrutar de buenas películas.</p>
+    </section>
 
+    <section id="cursos">
         <h2>Cursos</h2>
         <ul>
             <li>Análisis Financiero</li>
@@ -68,12 +91,12 @@
             <li>Pensamiento del Consumidor</li>
             <li><strong>Pensamiento Computacional</strong> – un curso que realmente rompe nuestros paradigmas y nos abre la mente sobre nuevas y mejores maneras de aprender, a cargo del profesor Ernesto Cuadros.</li>
         </ul>
+    </section>
 
-        <div class="contacto">
-            <h2>Contacto</h2>
-            <p>Si deseas ponerte en contacto conmigo, no dudes en enviarme un mensaje al siguiente correo:</p>
-            <p><strong>carvallogabriela8@gmail.com</strong></p>
-        </div>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas ponerte en contacto conmigo, no dudes en enviarme un mensaje al siguiente correo:</p>
+        <p><strong>carvallogabriela8@gmail.com</strong></p>
     </section>
 
     <footer>
@@ -82,3 +105,4 @@
 
 </body>
 </html>
+
